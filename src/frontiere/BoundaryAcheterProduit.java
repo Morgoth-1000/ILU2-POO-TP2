@@ -33,11 +33,11 @@ public class BoundaryAcheterProduit {
 				int quantite = Clavier.entrerEntier("Combien de " + produit + " voulez-vous acheter ?");
 				int quantiteAchetee = controlAcheterProduit.acheterProduit(nomVendeur, quantite);
 				if(quantiteAchetee == 0) {
-					System.out.println(nomAcheteur + " eut acheter " + quantite + " " + produit + ", malheureusement il n'y en a plus !");
+					System.out.println(nomAcheteur + " veut acheter " + quantite + " " + produit + ", malheureusement il n'y en a plus !");
 				}
 				else if(quantiteAchetee<quantite) {
 					System.out.println(nomAcheteur + " veut acheter " + quantite + " " + produit + ",malheureusement " + nomVendeur + " n'en a plus que " + quantiteAchetee +".");
-					System.out.println(nomAcheteur + " achète " + quantite + " " + produit + " à " + nomVendeur + ".");
+					System.out.println(nomAcheteur + " achète " + quantiteAchetee + " " + produit + " à " + nomVendeur + ".");
 				}
 				else {
 					System.out.println(nomAcheteur + " achète " + quantite + " " + produit + " à " + nomVendeur +".");
